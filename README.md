@@ -1,8 +1,4 @@
 
-Certainly! Here's a markdown version of the simplified explanation for the `microservices-ml` project:
-
----
-
 ## Overview of the Project
 
 - **Goal**: To demonstrate the integration of machine learning capabilities into a Java application using a microservices architecture.
@@ -44,10 +40,6 @@ The project comprises several microservices, each fulfilling a distinct role in 
 
 This project can be likened to a sophisticated, automated system capable of making predictions based on provided data. Imagine it as a highly advanced robot in a factory inspecting products (input data) and predicting which ones will be successful (the predictions). The project showcases how to construct and organize the robot's "brain" (machine learning component) and its communication methods with the external world (through microservices and a web interface), utilizing Java and Apache Spark ML.
 
----
-
-Feel free to adjust any part of this markdown to better fit your documentation or presentation needs!## microservices-ml
-Microservices with spring-boot and Machine Learning with Apache Spark ML. The aim of this solution is to use as sample of a pure Java reference architecture based on Spring Boot plus Apache Spark to solve machine learning problems.
 
 ## Quick start
 
