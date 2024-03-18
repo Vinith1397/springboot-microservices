@@ -1,4 +1,4 @@
-
+![alt Screen](https://github.com/oscuroweb/microservices-ml/blob/master/images/Capture.png)
 ## Overview of the Project
 
 - **Goal**: To demonstrate the integration of machine learning capabilities into a Java application using a microservices architecture.
