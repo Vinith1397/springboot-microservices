@@ -1,4 +1,52 @@
-## microservices-ml
+
+Certainly! Here's a markdown version of the simplified explanation for the `microservices-ml` project:
+
+---
+
+## Overview of the Project
+
+- **Goal**: To demonstrate the integration of machine learning capabilities into a Java application using a microservices architecture.
+- **Technology Stack**: Utilizes Spring Boot for microservices and Apache Spark ML for machine learning tasks.
+
+## Components of the Project
+
+The project comprises several microservices, each fulfilling a distinct role in the machine learning workflow:
+
+### 1. income-predictor-dto (Data Transfer Objects)
+
+- Defines the data objects for transferring data within the application, including inputs to the machine learning model and the generated predictions.
+
+### 2. income-predictor-ml (Machine Learning)
+
+- The core machine learning component that uses Apache Spark ML to process input data, train a machine learning model, and generate predictions.
+
+### 3. income-predictor-service
+
+- Exposes RESTful endpoints for accessing machine learning functionalities, acting as an intermediary between the `income-predictor-ml` and other services or clients.
+
+### 4. income-predictor-vaadin
+
+- The web interface for user interaction, built with Vaadin. Allows users to input data for predictions and view the results.
+
+## How It Works
+
+- **Compilation and Running Process**: Uses Maven for building and managing project dependencies. Each component is compiled into a `.jar` file.
+
+- **Running the Applications**: Each service (`income-predictor-ml`, `income-predictor-service`, and `income-predictor-vaadin`) is run separately but works together to process user inputs and display predictions.
+
+- **Interactions**:
+  - Users input data through the `income-predictor-vaadin` web interface.
+  - The web application forwards this data to the `income-predictor-service`.
+  - The service communicates with the `income-predictor-ml` to process the data with the machine learning model and generate predictions.
+  - Predictions are sent back to be displayed in the web interface.
+
+## Simple Terms Explanation
+
+This project can be likened to a sophisticated, automated system capable of making predictions based on provided data. Imagine it as a highly advanced robot in a factory inspecting products (input data) and predicting which ones will be successful (the predictions). The project showcases how to construct and organize the robot's "brain" (machine learning component) and its communication methods with the external world (through microservices and a web interface), utilizing Java and Apache Spark ML.
+
+---
+
+Feel free to adjust any part of this markdown to better fit your documentation or presentation needs!## microservices-ml
 Microservices with spring-boot and Machine Learning with Apache Spark ML. The aim of this solution is to use as sample of a pure Java reference architecture based on Spring Boot plus Apache Spark to solve machine learning problems.
 
 ## Quick start
@@ -112,10 +160,5 @@ Service that exposes the different endpoints to be consumed.
 
 Web application that shows the results.
 
-## Process description
-
-You can find the full description in [slideshare](https://www.slideshare.net/oscuroweb/integrando-machine-learning-y-microservicios) (in spanish, english translation on going).
-
-![alt Process description](https://github.com/oscuroweb/microservices-ml/blob/master/images/Process.png)
 
 
